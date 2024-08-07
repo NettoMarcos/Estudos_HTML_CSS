@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgba(37, 120, 183, 0.5);
+}
+
+header h1{
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+body{
+    background-color: #242424;
+    color: white;
+    font-family: sans-serif;
+}
+h2{
+    padding: 20px;
+    border: 1px solid white;
+}
+
+section{  
+    padding: 15px;
+}
+
+section>h2{
+    border: 1px solid #fff;
+}
+
+/*Atributo começou*/
+
+[nome^= "a"]{
+    color: red;
+}
+
+.comeca{
+    color: red;
+}
+
+/*Atributo Termina com*/
+[nome$= "o"]{
+    text-decoration-line: underline;
+}
+
+.termina{
+    text-decoration-line: underline;
+}
+
+/*Atributo contem*/
+[nome*= "ao"]{
+    background-color: #2578b7;
+    width: 100px;
+}
+
+.contem{
+    background-color: rgb(37, 120, 183);
+    width: 100px;
+    height: 30px;
+}
+
+/*Pseudo classes*/
+
+.heading{
+    transition: all 400ms ease-in;
+}
+
+.heading:hover{
+    
+    background: red;    
+}
+
+a:link{
+    color: #2578b7;
+}
+
+a:visited{
+    color: #f1edbd;
+}
+
+a:hover{
+    background: #2578b7;
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+input:not([type="checkbox"]):focus{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:enabled{
+    background-color: #2578b7;
+    border: none;
+}
+
+input:checked +h4{
+    color: red;
+}
+
+input:not(:checked) +h4{
+    color: purple;
+}
+
+.pai ul li:first-child{
+    color: firebrick;
+}
+
+.pai ul li:last-child{
+    color: burlywood;
+}
+
+.nth ul li:nth-child(odd){
+    color: red;
+}
+.nth ul li:nth-child(even){
+    color: #2578b7;
+}
+
+.nth ul li:nth-child(3n + 4){
+    background-color: #f1edbd;
+}
