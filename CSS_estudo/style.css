@@ -131,3 +131,37 @@ input:not(:checked) +h4{
 .nth ul li:nth-child(3n + 4){
     background-color: #f1edbd;
 }
+
+ul{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.depois ul li::before{
+    content: "isso vem antes";
+    background: #850000;
+    display: block;
+    width: 150px;
+}
+.depois ul li::after{
+    content: "isso vem depois";
+    background: #2578b7;
+    display: block;
+    width: 150px;
+}
+
+.first_letter p::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+
+.first_letter p::first-line{
+    background-color: #850000;
+}
+
+.first_letter p::selection{
+    background-color: #2578b7;
+}
