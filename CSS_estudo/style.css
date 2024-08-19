@@ -165,3 +165,9 @@ ul{
 .first_letter p::selection{
     background-color: #2578b7;
 }
+
+.texto{
+    display: block;
+    background: #850000;
+    width: 50%;
+}
